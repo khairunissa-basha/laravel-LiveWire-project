@@ -6,6 +6,7 @@ use Livewire\Component;
 
 class Comments extends Component
 {
+    public $newComment;
     public $comments=[
             [
                 'body'=>"This is first comment",
@@ -16,11 +17,11 @@ class Comments extends Component
 
     public function add_comment(){
        
-            $this->comments[]=[
-                'body'=>"This is second comment",
+            array_unshift($this->comments, [
+                'body'=>$this->newComment,
             'creator'=>"amna",
             'created_at'=>"1min ago"
-            ];
+            ]);
    
 
     }

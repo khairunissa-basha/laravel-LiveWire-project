@@ -1,6 +1,6 @@
 <div>
     <section style="background-color:pink; border-radius:4px; border:1px solid red; margin:30px auto; width:500px;padding:30px; text-align:center">
-        Enter your comment:<input type = "text">
+        Enter your comment:<input type = "text" placeholder="What is in your mind" wire:model="newComment">
         <!--<input type = "submit" value="ADD" style="background-color:green; color:white; border-radius:4px">-->
         <button style="color:white;background-color:green" wire:click="add_comment">ADD</button>
     </section>
